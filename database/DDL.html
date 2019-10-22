@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DATA DEFINITION LANGUAGE</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">Xen	's blog</a>
+			</div>
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li class="selected">
+					<a href="DDL.html">DDL</a>
+				</li>
+				<li>
+					<a href="DML.html">DML</a>
+				</li>
+				<li>
+					<a href="SQL.html">SQL</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+		<h3>DATA DEFINITION LANGUAGE</h3>
+		<b>post by Xenyx</b>
+		<p>
+			 
+DDL(Data Definition Language) adalah kumpulan perintah SQL yang digunakan untuk membuat (create), mengubah (alter) dan menghapus (drop) struktur dan definisi tipe data dari objek-objek database.
+		</p>
+		<b>Objek-objek database pada yang dimaksud - pada MySQL - adalah sebagai berikut :</b>
+		<p>
+           
+    1.Database</br>
+    2.Table</br>
+    3.View</br>
+    4.Index</br>
+    5.Procedure (Store Procedure)</br>
+    6.Function</br>
+    7.Trigger</br>
+
+		</p>
+		<b>Contoh perintah DDL pada Mysql : </b>
+		<p>
+				<b>1.Pembuatan (CREATE)</b></br>
+			•	CREATE DATABASE</br>
+			•	CREATE FUNCTION</br>
+			•	CREATE PROCEDURE</br>
+			•	CREATE TABLE</br>
+		</p>
+		<p>
+				<b>2.Perubahan (ALTER dan RENAME)</b></br>
+			•	ALTER DATABASE</br>
+			•	ALTER FUNCTION</br>
+			•	ALTER PROCEDURE</br>
+			•	ALTER TABLE</br>
+			• RENAME TABLE</br>
+		</p>
+		<p>
+		<b>3.Penghapusan (DROP)</b></br>
+		• DROP DATABASE</br>
+		• DROP FUNCTION</br>
+		• DROP PROCEDURE</br>
+		• DROP TABLE</br>
+		• DROP VIEW</br>
+		</p>	
+		<p>
+			<b>Contoh penggunaan :</b></br>
+			-- Perintah berikut akan membuat table pada database kita dengan nama "ms_karyawan"</br>
+•CREATE TABLE ms_karyawan (</br>
+•kode_cabang varchar(10) default NULL,</br>
+•kode_karyawan varchar(10) NOT NULL,</br>
+•nama_depan varchar(8) default NULL,</br>
+•nama_belakang varchar(9) default NULL,</br>
+•jenis_kelamin varchar(1) default NULL,</br>
+•PRIMARY KEY (kode_karyawan)
+)
+		</p>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+				<a href="https://twitter.com/" id="twitter">twitter</a>
+				<a href="https://web.facebook.com/ku.duca" id="facebook">facebook</a>
+				<a href="http://google.co.id/" id="googleplus">googleplus</a>
+			</div>
+			<p>
+				&copy; copyright 2019 | Xenyx's project
+			</p>
+		</div>
+	</div>
+</body>
+</html>

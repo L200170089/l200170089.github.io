@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>STRUCTURED QUERY LANGUAGE</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">Xen	's blog</a>
+			</div>
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="DDL.html">DDL</a>
+				</li>
+				<li>
+					<a href="DML.html">DML</a>
+				</li>
+				<li class="selected">
+					<a href="SQL.html">SQL</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+		<h3>STRUCTURED QUERY LANGUAGE</h3>
+		<b>post by Xenyx</b>
+		<p>
+			 
+SQL(Structured Query Language) Structured Query Language atau biasa disebut SQL adalah suatu bahasa khusus yang digunakan untuk mengakses data-data yang ada di dalam sebuah database relasional. SQL adalah bahasa komputer yang menggunakan standar ANSI (American Nasional Standard Institute) yang dipakai dalam manajemen database relasional. Dengan SQL atau bisa juga disebut query kita dapat memanipulasi atau mengedit database sesuai yang kita kehendaki. seperti menjalankan query untuk mengambil data, menambah data, memperbarui data dan menghapus data.
+		</p>
+		<b>Contoh perintah SQL :</b>
+		<p>
+			<b>1.CREATE DATABASE:</br></b>
+    	Digunakan untuk membuat database baru.</br>
+		Syntax dasar:</br>
+		CREATE DATABASE database_nama</br>
+		Contoh:</br>
+		CREATE DATABASE databaseku </br>
+
+	</p>
+		<p>
+		<b>2.SELECT:</br></b>
+			Perintah SELECT merupakan perintah dasar SQL yang di gunakan untuk memilih data dari database. Data yang di kembalikan di simpan dalam tabel yang di sebut result-set.</br>
+			Contoh :</br>
+			SELECT nis, nama, alamat FROM siswa;</br>
+			atau</br>
+			SELECT * FROM siswa;</br>
+			Perintah pertama di atas di gunakan untuk menyeleksi kolom NIS, NAMA, dan ALAMAT dari tabel SISWA. sedangkan perintah kedua di gunakan untuk menyeleksi semua kolom dari tabel SISWA </br>
+		</p>
+		<p>
+			<b>3.ORDER BY</b></br>
+			Perintah ORDER BY merupakan perintah dasar SQL yang di gunakan untuk mengurutkan result-set dalam pengurutan ‘ascending’ atau ‘descending’. Secara default perintah ORDER BY menampilkan record dalam pengurutan ‘ascending’ (‘ASC’). Untuk mengurutkan ‘descending’, gunakan kata kunci ‘DESC’.</br>
+			Contoh :</br>
+			SELECT nis, nama FROM siswa ORDER BY tahun_lahir DESC;</br>
+			Perintah di atas akan menampilkan result-set berupa field NIS dan NAMA dari tabel SISWA dengan di urutkan berdasarkan TAHUN_LAHIR secara descending, artinya tahun lahir akan di tampilkan mulai dari yang terbesar (siswa termuda) hingga terkecil (siswa termuda). </br>
+		</p>
+		<p>
+			<b>4.UPDATE</b> </br>
+			Perintah UPDATE merupakan perintah dasar SQL yang di gunakan untuk memperbarui atau mengubah nilai suatu record berdasarkan kriteria tertentu. </br>
+			Contoh :</br>
+			UPDATE siswa SET nama = 'Anton', alamat = 'Bandung' WHERE nim = '12345';</br>
+			Perintah di atas di gunakan untuk memperbarui kolom NAMA menjadi ‘Anton’ dan kolom ALAMAT menjadi ‘Bandung’ pada record dengan NIM ‘12345’</br> (ingat sebelumnya NIM ‘12345’ di gunakan oleh siswa bernama ‘Rendy’ yang beralamat di ‘Klaten’, sebut saja data tersebut keliru dan harus di perbarui). </br>
+		</p>	
+		<p>
+			<b>5.DELETE</b></br>
+			Hampir sama dengan perintah UPDATE, perintah DELETE juga merupakan perintah dasar SQL yang di gunakan untuk menghapus nilai</br> suatu record berdasarkan kriteria tertentu.</br>
+			Contoh :</br>
+			DELETE FROM siswa WHERE nim = '12345';</br>
+			Perintah di atas di gunakan untuk menghapus record dengan NIM ‘12345’, ingat bahwa NIM tersebut di gunakan oleh siswa bernama ‘joko’</br> (sebelumnya bernama ‘awang’) dan dengan di eksekusinya perintah DELETE ini maka record tersebut akan terhapus. </br>
+		</p>	
+		</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+				<a href="https://twitter.com/" id="twitter">twitter</a>
+				<a href="https://web.facebook.com/ku.duca" id="facebook">facebook</a>
+				<a href="http://google.co.id/" id="googleplus">googleplus</a>
+			</div>
+			<p>
+				&copy; copyright 2019 | Xenyx's project
+			</p>
+		</div>
+	</div>
+</body>
+</html>
