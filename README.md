@@ -1,2 +1,3 @@
-
-public website repository
+---
+permalink: /index.html
+---
